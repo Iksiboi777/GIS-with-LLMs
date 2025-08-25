@@ -1,0 +1,34 @@
+Columns and Their Descriptions:
+
+Depth (object): Describes the soil sampling depth (e.g., "0-20 cm").
+POINTID (float64): Unique identifier for the sampling point.
+pH_CaCl₂ (float64): Soil pH measured using a CaCl₂ solution.
+pH_H₂O (float64): Soil pH measured in water.
+EC (float64): Electrical conductivity of the soil.
+OC (float64): Organic carbon content in the soil.
+CaCO₃ (float64): Calcium carbonate content in the soil.
+P (float64): Phosphorus content in the soil.
+N (float64): Nitrogen content in the soil.
+K (float64): Potassium content in the soil.
+OC (20–30 cm) (float64): Organic carbon content measured in 20–30 cm depth samples.
+CaCO₃ (20–30 cm) (float64): Calcium carbonate content measured in 20–30 cm depth samples.
+Ox_Al (float64): Oxalate extractable aluminum.
+Ox_Fe (float64): Oxalate extractable iron.
+NUTS_0 (object): Nomenclature of Territorial Units for Statistics (NUTS) Level 0 (Country code).
+NUTS_1 (object): NUTS Level 1 code (regions within countries).
+NUTS_2 (object): NUTS Level 2 code (sub-regions).
+NUTS_3 (object): NUTS Level 3 code (local administrative units).
+TH_LAT (float64): Theoretical latitude of the sampling point.
+TH_LONG (float64): Theoretical longitude of the sampling point.
+SURVEY_DATE (object): Date when the sample was collected.
+Elev (float64): Elevation of the sampling point.
+LC (object): Land cover code.
+LU (object): Land use code.
+LC₀_Desc (object): Description of land cover at Level 0.
+LC₁_Desc (object): Description of land cover at Level 1.
+LU₁_Desc (object): Description of land use at Level 1.
+
+Observations:
+Several columns have missing values (e.g., CaCO₃, Ox_Al, Ox_Fe).
+Some columns contain categorical data (e.g., Depth, NUTS codes, LC, and LU).
+Columns like OC and CaCO₃ are stored as objects but might need conversion to numeric after handling < LOD (less than limit of detection) values.
